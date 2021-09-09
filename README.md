@@ -3,7 +3,7 @@ Source for <https://imud.fluffos.info>
 # How to
 
 ```bash
-$ ./driver config
+$ ./driver config.txt
 ```
 
 the default web port is 7878
