@@ -1,17 +1,15 @@
-inherit "/secure/master/error.c";
-inherit "/secure/master/connect.c";
+inherit "/secure/master/error.lpc";
+inherit "/secure/master/connect.lpc";
 
-private nomask void preload( string file )
-{
+private nomask void preload(string file) {
   object o;
 
-  write("Preloading: "+file+"...  ");
+  write("Preloading: " + file + "...  ");
   catch(o = load_object(file));
 }
 
-string* epilog( int eflag )
-{
-  return ({ "/secure/imud/imud.c" });
+string *epilog(int eflag) {
+  return ({ "/secure/imud/imud.lpc" });
 }
 
 string get_root_uid() {

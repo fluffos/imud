@@ -6,15 +6,13 @@
 ** 95-May-13.  Deathblade.  Created.
 */
 
-nomask void do_tell(string mudname, string username, string message)
-{
-//    send_to_user("tell", canon_mudname(mudname), lower_case(username),
-//                 ({ capitalize(this_user()->query_userid()), message }));
+nomask void do_tell(string mudname, string username, string message) {
+  //    send_to_user("tell", canon_mudname(mudname), lower_case(username),
+  //                 ({ capitalize(this_user()->query_userid()), message }));
 }
 
 protected nomask void rcv_tell(string orig_mud, string orig_user,
-                            string targ_user, mixed * message)
-{
+  string targ_user, mixed *message) {
   /*    object p;
 
     p = find_user(targ_user);

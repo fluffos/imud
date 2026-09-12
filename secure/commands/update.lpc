@@ -1,5 +1,4 @@
-int main(string file)
-{
+int main(string file) {
   object obj;
 
   // need to call resolve_path() and query_cwd()
@@ -8,7 +7,7 @@ int main(string file)
     return notify_fail("update what?\n");
 #else
     write("update what?\n");
-	return 1;
+    return 1;
 #endif
   }
   if (obj = find_object(file)) {
