@@ -182,7 +182,7 @@ int main(mixed *arg, mapping flags) {
     matches = insensitive_regexp(muds, "^" + translate(arg[0]));
     if (!sizeof(matches)) {
       printf("No muds out of %d match that pattern.\n", sizeof(mudlist));
-      return;
+      return 1;
     }
   }
 
