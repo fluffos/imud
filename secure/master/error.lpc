@@ -58,7 +58,6 @@ private varargs string standard_trace(mapping mp, int flag) {
 string error_handler(mapping mp, int caught) {
   string logfile = (caught ? LOG_FILE_CATCH : LOG_FILE_RUNTIME);
   string what = mp["error"];
-  string userid;
   string ret = "---\n" + standard_trace(mp);
   write_file(logfile, ret);
 
